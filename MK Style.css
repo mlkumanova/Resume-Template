@@ -1,10 +1,17 @@
 body, html {
     height: 100%;
     margin: 0;
+    overflow: hidden;
 }
+h1, h2, h3, h4 {
+    font-family: "Segoe UI";
+}
+p, h5, h6 {
+    font-family: "Segoe UI Light";
+}
+
 #img {
-    background-image: url(img/sky.jpeg);
-    /*background-color: rgb(230, 220, 212);*/
+    background-image: url(img/bg1.jpg);
     height: 100%;
     position: relative;
     background-position: center;
@@ -14,16 +21,13 @@ body, html {
 
 }
 
+
 #firstDiv  {
-    /*background-image: url(img/sky.jpeg);*/
-    /*background-color: rgb(230, 220, 212);*/
-    /*height: 100%;*/
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
-    /*position:relative;*/
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.42), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.42), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.42), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -39,12 +43,12 @@ body, html {
 }
 
 
+
 #yourPhoto {
     text-align: center;
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.42), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.42), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.42), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-
 
 }
 
@@ -61,16 +65,17 @@ fieldset {
 
 
 .headerOfDiv {
-/*margin-bottom: -10px;*/
-    margin-top: -13px;
+margin-bottom: 30px;
 }
 
-h2 {
-    font-family: "Segoe UI";
+
+
+.languages {
+    box-sizing: border-box;
 }
-p {
-    font-family: "Segoe UI Light";
-}
+
+
+
 
 
 /*Skills*/
@@ -78,6 +83,8 @@ p {
 background-color: transparent;
     float: none;
     text-align: start;
+    box-sizing: border-box;
+
 }
 
 ul.progress-bar {
@@ -93,13 +100,13 @@ ul.progress-bar li {
 
 ul.progress-bar li .progress-bar {
     position: relative;
-    background-color: #c5c5c5;
+    background-color: #dadada;
     margin-top: 8px;
     width: 70%;                         /*change here*/
     height: 10px;
 }
 ul.progress-bar li .progress-bar div {
-    background: #8a0032;
+    background: #5b0800;
     overflow: hidden;
     position: absolute;
     height: 10px;
@@ -109,25 +116,29 @@ ul.progress-bar li .progress-bar div {
 
 /*Work*/
 .workEducationContainer {
-    border-left: 2px solid #8a0032;
+    border-left: 2px solid #5b0800;
     margin-left: 10px;
     margin-right: 30px;
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10) ;
-    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10);
-    box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10) ;
+    padding-top: 1px;
+    /*-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10) ;*/
+    /*-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10);*/
+    /*box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10) ;*/
+    box-sizing: border-box;
+
 }
 
 .block {
     width: 90%;
     padding-left: 20px;
     position: relative;
+    word-wrap: break-word;
 }
 
 .circle {
     position: absolute;
     top: 0px;
     left: -9px;
-    background-color: #8a0032;
+    background-color:#5b0800;
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10) ;
     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10);
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10) ;
@@ -143,6 +154,7 @@ ul.progress-bar li .progress-bar div {
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10) ;
     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10);
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10) ;
+
 }
 /*/Hobbies*/
 
@@ -168,4 +180,36 @@ ul.progress-bar li .progress-bar div {
     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10);
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10) ;
 }
+
+hr{
+    border: 1px solid white;
+    width: 94.5%;
+    margin: 30px 0px 10px 0px;
+
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10) ;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10);
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10) ;
+
+}
+
+
+
+
 /*/Contacts*/
+
+/*Portfolio*/
+.portfolioImg {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10) ;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10);
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.52), 0 0 40px rgba(0, 0, 0, 0.10) ;
+}
+.grid {
+    position: relative;
+    margin: 0 auto;
+    padding: 1em 0 4em;
+    max-width: 1000px;
+    list-style: none;
+    text-align: center;
+}
